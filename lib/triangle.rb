@@ -22,7 +22,7 @@ class Triangle
       
     elsif s_sorted.first == s_sorted.last
       :equilateral
-    elsif s_sorted.first != s_sorted.last && s_sorted[0] == s_sorted[1] || s_sorted[1] == s_sorted[2]
+    elsif s_sorted.first != s_sorted.last && (s_sorted[0] == s_sorted[1] || s_sorted[1] == s_sorted[2])
       :isosceles
     elsif s_sorted[0] < s_sorted[1] && s_sorted[1] < s_sorted[2]
       :scalene
